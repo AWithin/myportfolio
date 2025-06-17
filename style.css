@@ -1,0 +1,207 @@
+h1 {
+    background-color: #5A827E;
+    color: #FAFFCA;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+#bro-portfolio {
+    color: #FAFFCA;
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+.portfolio-button-grid {
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #B9D4AA;
+    padding: 50px;
+    border: 5px solid #B9D4AA;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#portfolio-button {
+    display: inline-block;
+    padding: 15px 20px;
+    background: linear-gradient(47deg, #5A827E, #5A827E, #B9D4AA);
+    color: #FAFFCA;
+    max-height: 50px;
+    max-width: 150px;
+    text-decoration: none;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#portfolio-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#portfolio-button:hover::before {
+    left: 100%;
+}
+
+#portfolio-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+.footer-portfolio {
+    text-align: center;
+    font-size: 14px;
+    color: #84AE92;
+    background-color: #5A827E;
+    border-radius: 15px;
+    padding: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#mein-portfolio {
+    color: #FAFFCA;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.portfolio-grid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    background: linear-gradient(45deg, #5A827E, #FAFFCA);
+    color: #5A827E;
+    text-decoration: none;
+    padding: 20px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px black;
+}
+
+.portfolio-item:hover::before {
+    left: 100%;
+}
+
+.portfolio-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    #bro-portfolio {
+        font-size: 16px;
+    }
+
+    .portfolio-button-grid {
+        padding: 30px;
+    }
+
+    #portfolio-button {
+        max-height: 40px;
+        max-width: 120px;
+        font-size: 16px;
+    }
+
+    .portfolio-item {
+        height: 150px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    #bro-portfolio {
+        font-size: 14px;
+    }
+
+    .portfolio-button-grid {
+        padding: 20px;
+    }
+
+    #portfolio-button {
+        max-height: 35px;
+        max-width: 100px;
+        font-size: 14px;
+    }
+
+    .portfolio-item {
+        height: 120px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    #bro-portfolio {
+        font-size: 12px;
+    }
+
+    .portfolio-button-grid {
+        padding: 15px;
+    }
+
+    #portfolio-button {
+        max-height: 30px;
+        max-width: 80px;
+        font-size: 12px;
+    }
+
+    .portfolio-item {
+        height: 100px;
+        padding: 5px;
+    }
+}
